@@ -30,11 +30,11 @@ header.sticky {box-shadow:0 4px 12px rgba(0,0,0,0.1); background:#fff;}
 .menu-toggle {display:none; cursor:pointer; font-size:1.6rem;}
 .navbar h1 {font-size: 1.5rem; margin-right: auto;}
 
-@media (max-width: 768px) {.navbar h1 {font-size: 1.3rem;  /* smaller size for mobile */
-margin-right: auto; margin-left: 1px;}}
+@media (max-width: 768px) {.navbar h1 {font-size: 1.5rem;  /* smaller size for mobile */
+margin-right: auto; margin-left: 1px;padding-top: 10px; padding-bottom: 10px;} }
 
-@media (max-width: 480px) {.navbar h1 {font-size: 1rem;  /* even smaller for very small screens */
-margin-right: auto; margin-left: 1px;}}
+@media (max-width: 480px) {.navbar h1 {font-size: 1.2rem;  /* even smaller for very small screens */
+margin-right: auto; margin-left: 1px;padding-top: 10px; padding-bottom: 10px;}}
 
 @media (max-width: 768px) {
   .navbar .logo img {
@@ -43,6 +43,7 @@ margin-right: auto; margin-left: 1px;}}
     margin-left: -20px;
   }
 }
+
 
 
 
@@ -204,6 +205,18 @@ footer{background-color:var(--primary-color); color:var(--white); padding:3rem 5
   .appointment .btn, .contact-form .btn{width:100%; text-align:center;}
 }
 
+/* Mobile Navbar */
+@media(max-width:700px){
+  .nav-links {position:fixed; top:0; right:-100%; height:100vh; flex-direction:column; width:220px; background:rgba(255,111,0,0.95); padding:70px 20px 20px; gap:15px; box-shadow:0 4px 12px rgba(0,0,0,0.1); transition:right 0.3s ease-in-out;}
+  .nav-links li a{color:#fff;}
+  .nav-links.active{right:0;}
+  .menu-toggle{display:block; position:fixed; top:20px; right:20px; z-index:1100; color:#ff6f00;}
+  .nav-links.active ~ .menu-toggle{color:#fff;}
+  .about-container, .doctors-container, .services-grid, .contact-container{grid-template-columns:1fr; gap:1.5rem;}
+  .hero .btn-group{flex-direction:column; gap:10px; width:100%; text-align:center;}
+}
+
+
 .contact {background-color:var(--secondary-color);}
 .contact-container {display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:2rem;}
 .contact-info{text-align:left;}
@@ -236,13 +249,3 @@ footer{background-color:var(--primary-color); color:var(--white); padding:3rem 5
 .whatsapp-btn{position:fixed; bottom:30px; right:30px; background-color:#25D366; color:var(--white); width:60px; height:60px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:1.8rem; box-shadow:0 4px 12px rgba(0,0,0,0.15); z-index:1000; text-decoration:none; transition:all 0.3s ease;}
 .whatsapp-btn:hover{transform:scale(1.1); box-shadow:0 8px 20px rgba(0,0,0,0.2);}
 
-/* Mobile Navbar */
-@media(max-width:700px){
-  .nav-links {position:fixed; top:0; right:-100%; height:100vh; flex-direction:column; width:220px; background:rgba(255,111,0,0.95); padding:70px 20px 20px; gap:15px; box-shadow:0 4px 12px rgba(0,0,0,0.1); transition:right 0.3s ease-in-out;}
-  .nav-links li a{color:#fff;}
-  .nav-links.active{right:0;}
-  .menu-toggle{display:block; position:fixed; top:20px; right:20px; z-index:1100; color:#ff6f00;}
-  .nav-links.active ~ .menu-toggle{color:#fff;}
-  .about-container, .doctors-container, .services-grid, .contact-container{grid-template-columns:1fr; gap:1.5rem;}
-  .hero .btn-group{flex-direction:column; gap:10px; width:100%; text-align:center;}
-}
