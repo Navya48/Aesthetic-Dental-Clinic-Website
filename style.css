@@ -31,15 +31,16 @@ header.sticky {box-shadow:0 4px 12px rgba(0,0,0,0.1); background:#fff;}
 .navbar h1 {font-size: 1.5rem; margin-right: auto;}
 
 @media (max-width: 768px) {.navbar h1 {font-size: 1.3rem;  /* smaller size for mobile */
-margin-right: auto;}}
+margin-right: auto; margin-left: 1px;}}
 
 @media (max-width: 480px) {.navbar h1 {font-size: 1rem;  /* even smaller for very small screens */
-margin-right: auto;}}
+margin-right: auto; margin-left: 1px;}}
 
 @media (max-width: 768px) {
   .navbar .logo img {
-    height: clamp(40px, 10vw, 60px); /* smaller logo */
+    height: clamp(50px, 10vw, 60px); /* smaller logo */
     margin-right: 0; /* reduce spacing */
+    margin-left: 0;
   }
 }
 
