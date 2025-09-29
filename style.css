@@ -40,8 +40,8 @@ header.sticky {box-shadow:0 4px 12px rgba(0,0,0,0.1); background:#fff;}
   color:#fff; text-align:center; padding:80px 20px; height:100vh;
   display:flex; flex-direction:column; justify-content:center; align-items:center;
 }
-.hero h1 {font-size:clamp(2rem,6vw,3rem); margin-bottom:20px; line-height:1.2; }
-.hero p {font-size:clamp(1rem,2.5vw,1.2rem); margin-bottom:30px; max-width:600px; margin-left:auto; margin-right:auto;}
+.hero h1 {font-size:clamp(2.2rem,6vw,3.2rem); margin-bottom:20px; line-height:1.2; margin-top: 100px; }
+.hero p {font-size:clamp(1.2rem,2.5vw,1.4rem); margin-bottom:25px; max-width:600px; margin-left:auto; margin-right:auto;}
 .hero .btn-group {margin-top:20px; display:flex; flex-wrap:wrap; justify-content:center; gap:15px;}
 
 /* Buttons */
@@ -57,13 +57,13 @@ header.sticky {box-shadow:0 4px 12px rgba(0,0,0,0.1); background:#fff;}
 .about-container {display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:center;}
 .about-img {border-radius:10px; overflow:hidden; box-shadow:var(--box-shadow);}
 .about-img img {width:100%; height:auto; display:block; transition: transform 0.5s ease;}
-.about-content h2 {margin-bottom:1.5rem; text-align:center; color:var(--primary-color); font-size:clamp(1.8rem,5vw,3rem);}
+.about-content h2 {margin-bottom:1.5rem; text-align:center; color:var(--primary-color); font-size:clamp(2.2rem,6vw,4rem); font-family: 'Tangerine', cursive;}
 .about-content h3 {margin-bottom:1.5rem; text-align:center; font-size:clamp(1.2rem,4vw,2.2rem);}
-.about-content p {margin-bottom:1rem; text-align:left; font-size:clamp(0.9rem,2vw,1.2rem);}
+.about-content p {margin-bottom:1rem; text-align:left; font-size:clamp(1rem,2.2vw,1.4rem);}
 
 
 /* Doctors Section */
-.doctors-section {background:var(--secondary-color); padding:clamp(2rem,5vw,5rem);}
+.doctors-section {background:var(--secondary-color); padding:clamp(2rem,4vw,4rem);}
 .doctors-section .section-title {color:var(--primary-color); margin-bottom:2.5rem;}
 .doctors-container {display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:2rem; max-width:1200px; margin:0 auto;}
 .doctor-card {
@@ -82,7 +82,7 @@ header.sticky {box-shadow:0 4px 12px rgba(0,0,0,0.1); background:#fff;}
 
 
 /* Services Section */
-.section {padding:clamp(2rem,5vw,5rem); text-align:center;}
+.section {padding:clamp(2rem,4vw,4rem); text-align:center;}
 .section-title {font-size:clamp(1.8rem,4vw,2.5rem); margin-bottom:1rem; color:var(--primary-color);}
 .section-subtitle {color:var(--light-text); margin-bottom:3rem; max-width:700px; margin-inline:auto;margin-right: auto; font-size:clamp(0.9rem,2vw,1.2rem);}
 .services-grid {display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:2rem; margin-top:2rem;}
