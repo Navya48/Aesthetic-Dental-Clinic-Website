@@ -28,10 +28,13 @@ header.sticky {box-shadow:0 4px 12px rgba(0,0,0,0.1); background:#fff;}
 .navbar .nav-links li a {font-weight:700; transition:0.3s; font-size:clamp(0.9rem, 2vw, 1.2rem);}
 .navbar .nav-links li a:hover {color:var(--primary-color);}
 .menu-toggle {display:none; cursor:pointer; font-size:1.6rem;}
+.navbar h1 {font-size: 1.5rem; margin-right: auto;}
 
-@media (max-width: 768px) {.navbar h1 {font-size: 1.3rem;  /* smaller size for mobile */}}
+@media (max-width: 768px) {.navbar h1 {font-size: 1.3rem;  /* smaller size for mobile */
+margin-right: auto;}}
 
-@media (max-width: 480px) {.navbar h1 {font-size: 1rem;  /* even smaller for very small screens */}}
+@media (max-width: 480px) {.navbar h1 {font-size: 1rem;  /* even smaller for very small screens */
+margin-right: auto;}}
 
 
 /* Hero */
