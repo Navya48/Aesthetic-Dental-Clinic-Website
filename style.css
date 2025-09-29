@@ -92,16 +92,18 @@ margin-right: auto; margin-left: 1px;}}
 .doctor-card p:nth-of-type(1), .doctor-card p:nth-of-type(2) {color:#555; font-weight:500;}
 .doctor-card p:nth-of-type(2) {display:inline-block; background:rgba(255,153,0,0.1); color:var(--primary-color); padding:0.25rem 0.6rem; border-radius:999px; margin:0.35rem auto 0.75rem;}
 
-/* On small screens, make doctor cards wider */
 @media (max-width: 768px) {
   .doctors-container {
     grid-template-columns: 1fr; /* one card per row */
-    gap: 1.5rem; /* optional, smaller gap */
+    gap: 1.5rem;
+    max-width: 100%;   /* remove any max-width limit */
+    padding: 0 1rem;   /* optional: small side padding */
+    margin: 0;         /* remove auto centering */
   }
 
   .doctor-card {
-    width: 100%;  /* take 90% of container width */
-    margin: 0 auto; /* center the card */
+    width: 100%;       /* full width of container */
+    margin: 0;         /* remove extra centering margin */
   }
 }
 
