@@ -29,9 +29,9 @@ header.sticky {box-shadow:0 4px 12px rgba(0,0,0,0.1); background:#fff;}
 .navbar .nav-links li a:hover {color:var(--primary-color);}
 .menu-toggle {display:none; cursor:pointer; font-size:1.8rem;}
 
-@media (max-width: 768px) {.navbar h1 {font-size: 1.5rem;  /* smaller size for mobile */}}
+@media (max-width: 768px) {.navbar h1 {font-size: 1.3rem;  /* smaller size for mobile */}}
 
-@media (max-width: 480px) {.navbar h1 {font-size: 1.2rem;  /* even smaller for very small screens */}}
+@media (max-width: 480px) {.navbar h1 {font-size: 1rem;  /* even smaller for very small screens */}}
 
 
 /* Hero */
