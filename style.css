@@ -39,8 +39,8 @@ margin-right: auto; margin-left: 1px;}}
 @media (max-width: 768px) {
   .navbar .logo img {
     height: clamp(25px, 2vw, 50px); /* smaller logo */
-    margin-right: 7px; /* reduce spacing */
-    margin-left: -10px;
+    margin-right: 15px; /* reduce spacing */
+    margin-left: -20px;
   }
 }
 
