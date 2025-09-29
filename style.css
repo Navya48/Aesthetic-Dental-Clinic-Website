@@ -38,8 +38,8 @@ margin-right: auto;}}
 
 @media (max-width: 768px) {
   .navbar .logo img {
-    height: clamp(50px, 10vw, 60px); /* smaller logo */
-    margin-right: 3px; /* reduce spacing */
+    height: clamp(40px, 10vw, 60px); /* smaller logo */
+    margin-right: 0; /* reduce spacing */
   }
 }
 
