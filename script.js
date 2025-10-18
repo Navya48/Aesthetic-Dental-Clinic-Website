@@ -45,20 +45,25 @@ faqQuestions.forEach(question => {
 // ===== Appointment Form =====
 document.getElementById("appointment-form").addEventListener("submit", function (e) {
   e.preventDefault();
-  emailjs.sendForm('YOUR_SERVICE_ID', 'TEMPLATE_APPOINTMENT', this)
+
+  const form = this;
+
+  // Step 1: Send email via EmailJS
+  emailjs.sendForm('service_e40padk', 'template_6t7sfd4', form, 'iJnsU5lUSVaK4BIA3')
     .then(() => {
       alert("✅ Thank you! Your appointment request has been received. We’ll contact you shortly.");
-      this.reset();
-    }, (err) => {
+      form.reset();
+     }, (err) => {
       alert("❌ Failed to send. Please try again later.");
       console.error(err);
     });
 });
 
+
 // ===== Contact Form =====
 document.getElementById("contactForm").addEventListener("submit", function(e) {
   e.preventDefault();
-  emailjs.sendForm('YOUR_SERVICE_ID', 'TEMPLATE_CONTACT', this)
+  emailjs.sendForm('service_e40padk', 'template_6t7sfd4', this, 'iJnsU5lUSVaK4BIA3')
     .then(() => {
       alert("✅ Message sent successfully!");
       this.reset();
@@ -67,6 +72,7 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
       console.error(err);
     });
 });
+
 
 // ===== Scroll Events =====
 const whatsappBtn = document.querySelector(".whatsapp-btn");

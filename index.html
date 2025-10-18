@@ -11,7 +11,7 @@
 
   <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
   <script type="text/javascript">
-  (function(){emailjs.init("YOUR_USER_ID");})(); // Replace YOUR_USER_ID with your EmailJS public key
+  (function(){emailjs.init("iJnsU5lUSVaK4BIA3");})();
   </script>
 
 </head>
@@ -74,8 +74,24 @@
       <h2 class="section-title">Meet Our Doctor's</h2>
       <div class="doctors-container">
 
+
+        
         <!---Doctor 1-->
         <div class="doctor1-card">
+          <div class="doctor-card">
+            <div class="doctor-img">
+             <img src="images/Dr.Uma Reddy.png" alt="Dr.Uma Reddy ">
+            </div>
+          <h3>Dr.Uma Reddy </h3>
+          <p>BDS, MDS</p>
+          <p>Professor of Oral Medicine & Radiology </p>
+          <p>Dr. Uma Reddy has been providing complete dental solutions for over 27+ years in a professional and friendly environment. A specialist in the diagnosis and management of diseases of the oral and maxillofacial region, she combines advanced knowledge with modern techniques to deliver effective care. Her expertise covers a wide range of treatments, from cosmetic dentistry to advanced laser therapies, always maintaining the highest standards of dental excellence.</p>
+          </div>
+        </div>
+
+
+        <!---Doctor 2-->
+        <div class="doctor2-card">
           <div class="doctor-card">
             <div class="doctor-img">
              <img src="images/Dr.Suresh Reddy K.png" alt="Dr.Suresh Reddy K" class="top-focus">
@@ -88,18 +104,6 @@
         </div>
         
 
-        <!---Doctor 2-->
-        <div class="doctor2-card">
-          <div class="doctor-card">
-            <div class="doctor-img">
-             <img src="images/Dr.Uma Reddy.png" alt="Dr.Uma Reddy ">
-            </div>
-          <h3>Dr.Uma Reddy </h3>
-          <p>BDS, MDS</p>
-          <p>Professor of Oral Medicine & Radiology </p>
-          <p>Dr. Uma Reddy has been providing complete dental solutions for over 27+ years in a professional and friendly environment. A specialist in the diagnosis and management of diseases of the oral and maxillofacial region, she combines advanced knowledge with modern techniques to deliver effective care. Her expertise covers a wide range of treatments, from cosmetic dentistry to advanced laser therapies, always maintaining the highest standards of dental excellence.</p>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -206,43 +210,46 @@
   <section class="section appointment" id="appointment">
     <h2 class="section-title">Book an Appointment</h2>
     <p class="section-subtitle">Fill out the form below and we'll contact you to schedule your visit.</p>
+    
+    
+    <!--Appointment Form-->
     <div class="form-container">
       <form id="appointment-form">
 
         <!--Name section-->
         <div class="form-group">
           <label for="name">Full Name</label>
-          <input type="text" id="name" class="form-control" required>
+          <input type="text" id="name" name="name" class="form-control" required>
         </div>
 
         <!--Email section-->
         <div class="form-group">
           <label for="email">Email Address</label>
-          <input type="email" id="email" class="form-control" required>
+          <input type="email" id="email" name="email" class="form-control" required>
         </div>
 
         <!--Phone Number section-->
         <div class="form-group">
           <label for="phone">Phone Number</label>
-          <input type="tel" id="phone" class="form-control" required>
+          <input type="tel" id="phone" name="phone" class="form-control" required>
         </div>
 
         <!--Preferred Date section-->
         <div class="form-group">
           <label for="date">Preferred Date</label>
-          <input type="date" id="date" class="form-control" required>
+          <input type="date" id="date" name="date" class="form-control" required>
         </div>
 
         <!--Preferred Time section-->
         <div class="form-group">
           <label for="time">Preferred Time</label>
-          <input type="time" id="time" class="form-control" required>
+          <input type="time" id="time" name="time" class="form-control" required>
         </div>
 
         <!--Service Needed Section-->
         <div class="form-group">
           <label for="service">Service Needed</label>
-          <select id="service" class="form-control" required>
+          <select id="service" name="service" class="form-control" required>
             <option value="">Select a Service</option>
             <option value="endodontics">CT with Rotary Endodontics & Digital X-Rays</option>
             <option value="crowns">CAD/CAM Dental Crowns</option>
@@ -261,7 +268,7 @@
         <!--Additional Info Section-->
         <div class="form-group">
           <label for="message">Additional Information</label>
-          <textarea type="text" id="message" class="form-control"></textarea>
+          <textarea type="text" id="message" name="message" class="form-control"></textarea>
         </div>
 
         <!--Form Button Section-->
@@ -382,19 +389,19 @@
       <form id="contactForm">
         <div class="form-group">
           <label for="contact-name">Name</label>
-          <input type="text" id="contact-name" class="form-control" required>
+          <input type="text" id="contact-name" name="name" class="form-control" required>
         </div>
         <div class="form-group">
           <label for="contact-email">Email</label>
-          <input type="email" id="contact-email" class="form-control" required>
+          <input type="email" id="contact-email" name="email" class="form-control" required>
         </div>
         <div class="form-group">
           <label for="contact-subject">Subject</label>
-          <input type="text" id="contact-subject" class="form-control" required>
+          <input type="text" id="contact-subject" name="Subject" class="form-control" required>
         </div>
         <div class="form-group">
           <label for="contact-message">Message</label>
-          <textarea id="contact-message" class="form-control" required></textarea>
+          <textarea id="contact-message" name="message" class="form-control" required></textarea>
         </div>
         <button type="submit" class="btn">Send Message</button>
         </form>

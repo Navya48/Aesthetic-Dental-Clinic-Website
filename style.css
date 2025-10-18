@@ -45,8 +45,6 @@ margin-right: auto; margin-left: 1px;padding-top: 10px; padding-bottom: 10px;}}
 }
 
 
-
-
 /* Hero */
 .hero {
   background: linear-gradient(rgba(248,85,4,0.7), rgba(15,70,126,0.7)), url('images/Hero\ section.png') no-repeat center center/cover;
@@ -56,6 +54,12 @@ margin-right: auto; margin-left: 1px;padding-top: 10px; padding-bottom: 10px;}}
 .hero h1 {font-size:clamp(2.2rem,6vw,3.2rem); margin-bottom:20px; line-height:1.2; margin-top: 100px; }
 .hero p {font-size:clamp(1.2rem,2.5vw,1.4rem); margin-bottom:25px; max-width:600px; margin-left:auto; margin-right:auto;}
 .hero .btn-group {margin-top:20px; display:flex; flex-wrap:wrap; justify-content:center; gap:15px;}
+
+@media (max-width: 768px){
+  .hero {padding: 60px 15px; height: 70vh;}
+  .hero h1 {font-size: clamp(1.8rem, 5vw, 2.5rem); margin-top: 80px;}
+  .hero p {font-size: clamp(1rem, 3vw, 11.2rem);}
+}
 
 /* Buttons */
 .btn {display:inline-block;padding: clamp(0.6rem, 1.2vw, 1rem) clamp(1.2rem, 2vw, 2rem);background:var(--primary-color); color:var(--white);border-radius:50px; font-size:clamp(0.9rem, 2vw, 1.2rem);
