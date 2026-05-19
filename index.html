@@ -299,6 +299,50 @@
         <div class="care-card-cta">View Instructions <i class="fas fa-arrow-right"></i></div>
       </div>
 
+      <!-- Card 5 -->
+      <div class="care-card" onclick="openModal('modal-flossing')" role="button" tabindex="0" aria-label="Open Flossing Instructions">
+        <div class="care-card-icon"><i class="fas fa-teeth"></i></div>
+        <h3>Flossing Instructions &amp; Types of Floss</h3>
+        <p class="care-card-desc">Learn proper flossing techniques and choose the right floss for your dental needs.</p>
+        <div class="care-card-topics">
+          <span>Flossing</span><span>Dental Tape</span><span>Water Flosser</span><span>Braces Care</span>
+        </div>
+        <div class="care-card-cta">View Instructions <i class="fas fa-arrow-right"></i></div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="care-card" onclick="openModal('modal-post-scaling')" role="button" tabindex="0" aria-label="Open Post-Scaling Instructions">
+        <div class="care-card-icon"><i class="fas fa-tooth"></i></div>
+        <h3>Post-Scaling Oral Hygiene Instructions</h3>
+        <p class="care-card-desc">Important after-care tips following professional dental cleaning and scaling.</p>
+        <div class="care-card-topics">
+          <span>Scaling</span><span>Sensitivity</span><span>Brushing</span><span>Mouthwash</span>
+        </div>
+        <div class="care-card-cta">View Instructions <i class="fas fa-arrow-right"></i></div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="care-card" onclick="openModal('modal-brushing')" role="button" tabindex="0" aria-label="Open Brushing Technique Instructions">
+        <div class="care-card-icon"><i class="fas fa-brush"></i></div>
+        <h3>Proper Brushing Technique</h3>
+        <p class="care-card-desc">Step-by-step brushing guide using the Modified Bass Technique.</p>
+        <div class="care-card-topics">
+          <span>Brushing</span><span>Gum Care</span><span>Children</span><span>Oral Hygiene</span>
+        </div>
+        <div class="care-card-cta">View Instructions <i class="fas fa-arrow-right"></i></div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="care-card" onclick="openModal('modal-extraction')" role="button" tabindex="0" aria-label="Open Post-Extraction Instructions">
+        <div class="care-card-icon"><i class="fas fa-user-md"></i></div>
+        <h3>Post-Extraction Guidelines</h3>
+        <p class="care-card-desc">Recovery instructions after tooth extraction and denture placement.</p>
+        <div class="care-card-topics">
+          <span>Extraction</span><span>Bleeding</span><span>Denture Care</span><span>Healing</span>
+        </div>
+        <div class="care-card-cta">View Instructions <i class="fas fa-arrow-right"></i></div>
+      </div>
+
     </div>
   </section>
 
@@ -618,6 +662,202 @@
       <div class="modal-footer">
         <p><i class="fas fa-phone"></i> Questions? Call us at <strong>+91 98864 52872</strong></p>
         <button class="btn modal-close-btn" onclick="closeModal('modal-implant')">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5: Flossing -->
+  <div class="modal-overlay" id="modal-flossing" onclick="closeModalOnOverlay(event, 'modal-flossing')">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div class="modal-header-icon"><i class="fas fa-teeth"></i></div>
+        <h2>Flossing Instructions<br><span>&amp; Types of Floss</span></h2>
+        <button class="modal-close" onclick="closeModal('modal-flossing')" aria-label="Close">&times;</button>
+      </div>
+      <div class="modal-body">
+
+        <div class="modal-block">
+          <h4><span class="modal-num">1</span> Why Flossing Is Important</h4>
+          <ul>
+            <li>Prevents gum disease</li>
+            <li>Removes plaque between teeth</li>
+            <li>Reduces bad breath</li>
+            <li>Helps maintain healthy gums</li>
+          </ul>
+        </div>
+
+        <div class="modal-block">
+          <h4><span class="modal-num">2</span> How to Floss Properly</h4>
+          <ul>
+            <li>Use 18–20 inches of floss</li>
+            <li>Slide gently between teeth</li>
+            <li>Curve floss into a "C" shape</li>
+            <li>Move up and down below gumline</li>
+            <li>Use clean floss for every tooth</li>
+          </ul>
+        </div>
+
+        <div class="modal-block">
+          <h4><span class="modal-num">3</span> Types of Floss</h4>
+          <ul>
+            <li>Waxed floss – for tight spaces</li>
+            <li>PTFE floss – smooth and shred resistant</li>
+            <li>Dental tape – for wider gaps</li>
+            <li>Super floss – ideal for braces and bridges</li>
+            <li>Water flossers – useful for implants and orthodontics</li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <p><i class="fas fa-phone"></i> Questions? Call us at <strong>+91 98864 52872</strong></p>
+        <button class="btn modal-close-btn" onclick="closeModal('modal-flossing')">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6: Post-Scaling -->
+  <div class="modal-overlay" id="modal-post-scaling" onclick="closeModalOnOverlay(event, 'modal-post-scaling')">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div class="modal-header-icon"><i class="fas fa-tooth"></i></div>
+        <h2>Post-Scaling<br><span>Oral Hygiene Instructions</span></h2>
+        <button class="modal-close" onclick="closeModal('modal-post-scaling')" aria-label="Close">&times;</button>
+      </div>
+      <div class="modal-body">
+
+        <div class="modal-block">
+          <h4><span class="modal-num">1</span> Brushing</h4>
+          <ul>
+            <li>Brush twice daily with a soft toothbrush</li>
+            <li>Avoid aggressive scrubbing</li>
+            <li>Use desensitizing toothpaste if needed</li>
+          </ul>
+        </div>
+
+        <div class="modal-block">
+          <h4><span class="modal-num">2</span> Eating &amp; Drinking</h4>
+          <ul>
+            <li>Avoid spicy and hard foods for 24 hours</li>
+            <li>Drink plenty of water</li>
+            <li>Avoid smoking and alcohol for 48 hours</li>
+          </ul>
+        </div>
+
+        <div class="modal-block modal-block-alert">
+          <h4><span class="modal-num alert">3</span> Sensitivity</h4>
+          <ul>
+            <li>Mild sensitivity is normal</li>
+            <li>Avoid ice-cold drinks</li>
+            <li>Contact your dentist if sensitivity lasts more than one week</li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <p><i class="fas fa-phone"></i> Questions? Call us at <strong>+91 98864 52872</strong></p>
+        <button class="btn modal-close-btn" onclick="closeModal('modal-post-scaling')">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 7: Brushing -->
+  <div class="modal-overlay" id="modal-brushing" onclick="closeModalOnOverlay(event, 'modal-brushing')">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div class="modal-header-icon"><i class="fas fa-brush"></i></div>
+        <h2>Proper Brushing<br><span>Technique</span></h2>
+        <button class="modal-close" onclick="closeModal('modal-brushing')" aria-label="Close">&times;</button>
+      </div>
+      <div class="modal-body">
+
+        <div class="modal-block">
+          <h4><span class="modal-num">1</span> Correct Technique</h4>
+          <ul>
+            <li>Hold the brush at a 45° angle</li>
+            <li>Use gentle circular motions</li>
+            <li>Clean outer, inner, and chewing surfaces</li>
+            <li>Brush your tongue gently</li>
+          </ul>
+        </div>
+
+        <div class="modal-block">
+          <h4><span class="modal-num">2</span> Duration &amp; Frequency</h4>
+          <ul>
+            <li>Brush twice daily</li>
+            <li>Brush for at least 2 minutes</li>
+            <li>Use fluoride toothpaste</li>
+          </ul>
+        </div>
+
+        <div class="modal-block modal-block-alert">
+          <h4><span class="modal-num alert">3</span> Common Mistakes</h4>
+          <ul>
+            <li>Brushing too hard</li>
+            <li>Skipping the gum line</li>
+            <li>Not brushing long enough</li>
+            <li>Forgetting the tongue and back teeth</li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <p><i class="fas fa-phone"></i> Questions? Call us at <strong>+91 98864 52872</strong></p>
+        <button class="btn modal-close-btn" onclick="closeModal('modal-brushing')">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 8: Extraction -->
+  <div class="modal-overlay" id="modal-extraction" onclick="closeModalOnOverlay(event, 'modal-extraction')">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div class="modal-header-icon"><i class="fas fa-user-md"></i></div>
+        <h2>Post-Extraction<br><span>Guidelines</span></h2>
+        <button class="modal-close" onclick="closeModal('modal-extraction')" aria-label="Close">&times;</button>
+      </div>
+      <div class="modal-body">
+
+        <div class="modal-block">
+          <h4><span class="modal-num">1</span> Control Bleeding</h4>
+          <ul>
+            <li>Bite on gauze for 30–45 minutes</li>
+            <li>Slight oozing is normal</li>
+            <li>Use a damp tea bag if bleeding continues</li>
+          </ul>
+        </div>
+
+        <div class="modal-block">
+          <h4><span class="modal-num">2</span> Diet Instructions</h4>
+          <ul>
+            <li>Eat soft, cool foods</li>
+            <li>Avoid hot and spicy foods</li>
+            <li>Do not use straws</li>
+          </ul>
+        </div>
+
+        <div class="modal-block">
+          <h4><span class="modal-num">3</span> Denture Care</h4>
+          <ul>
+            <li>Do not remove immediate dentures for 24 hours</li>
+            <li>Clean dentures gently after meals</li>
+            <li>Store dentures in clean water</li>
+          </ul>
+        </div>
+
+        <div class="modal-block modal-block-alert">
+          <h4><span class="modal-num alert">4</span> Contact the Dentist If</h4>
+          <ul>
+            <li>Heavy bleeding continues</li>
+            <li>Swelling worsens after 3 days</li>
+            <li>Severe pain or fever develops</li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <p><i class="fas fa-phone"></i> Questions? Call us at <strong>+91 98864 52872</strong></p>
+        <button class="btn modal-close-btn" onclick="closeModal('modal-extraction')">Close</button>
       </div>
     </div>
   </div>
